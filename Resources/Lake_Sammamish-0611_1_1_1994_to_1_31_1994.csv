@@ -1,0 +1,8 @@
+CollectDate,SampleNum,Depth (m),Ammmonia Nitrogen (mg/L),Ammmonia Nitrogen Qualifier*,AN MDL (mg/L),Chlorophyll a (µg/L),Chlorophyll a Qualifier*,Chloro MDL (µg/L),Conductivity (µmhos/cm),Cond Qualifier*,Cond MDL (µmhos/cm),Dissolved Oxygen (mg/L),DO Qualifier*,DO MDL (mg/L),Ecoli,Ecoli Qualifier*,Fecal Coliform (CFU/100ml),Fecal Coliform Qualifier*,Nitrate Nitrite (mg/L),Nitrate Nitrite Qualifier*,Nitrate Nitrite MDL (mg/L),Orthophosphate Phosphate (mg/L),OP Qualifier*,OP MDL (mg/L),pH,pH Qualifier*,Secchi (m),Secchi Qualifier*,Temperature (°C),Temperature Qualifier*,Total Nitrogen (mg/L),TN Qualifier*,TN MDL (mg/L),Total Phosphorus (mg/L),TP Qualifier*,TP MDL (mg/L),Total Alkalinity (mg/L),Total Alkalinity Qualifier*,Total Alkalinity MDL (mg/L)
+1/6/94,L2704-18,1,0.02,<MDL      ,0.02,0.1,,0.01,103,,,9.15,,,,,1,,0.27,,0.05,0.011,,0.002,7.4,,4.7,,7.4,,0.41,,0.05,0.017,,0.005,42,,0.2
+1/6/94,L2704-19,5,,,,,,,104,,,8.98,,,,,,,,,,,,,7.4,,,,7.3,,,,,,,,,,
+1/6/94,L2704-20,10,0.02,<MDL      ,0.02,,,,102,,,9,,,,,,,0.29,,0.05,0.012,,0.002,7.4,,,,7.3,,0.44,,0.05,0.019,,0.005,42,,0.2
+1/6/94,L2704-21,15,,,,,,,105,,,9.21,,,,,,,,,,,,,7.4,,,,7.3,,,,,,,,,,
+1/6/94,L2704-22,20,,,,,,,104,,,9.2,,,,,,,,,,,,,7.4,,,,7.3,,,,,,,,,,
+1/6/94,L2704-23,22.5,0.02,<MDL      ,0.02,,,,103,,,9.19,,,,,,,0.28,,0.05,0.013,,0.002,7.4,,,,7.3,,0.4,,0.05,0.023,,0.005,42,,0.2
+1/6/94,L2704-18,1,0.02,<MDL      ,0.02,0.1,,0.01,103,,,9.15,,,,,1,,0.27,,0.05,0.011,,0.002,7.4,,4.7,,7.4,,0.41,,0.05,0.017,,0.005,42,,0.2
