@@ -12,11 +12,14 @@ weather and water quality.
 
 ## ERD
 
-## Source citation for your data
+We used Quick DBD to create a ERD of our data
+![QuickDBD-export](https://user-images.githubusercontent.com/106849689/200139417-deccad9a-fb82-4ff2-92a1-862dc4d4b325.png)
+
+## Source citation for raw data
 
 https://green2.kingcounty.gov/lakes/Query.aspx
 
-## ML model you are thinking of using and why it would be good for your case
+## ML models under consideration
 
 The team is experimenting with linear regression and logistic regression. We believe either would be good because the data we are working with
 can be either continuous or categorical.
