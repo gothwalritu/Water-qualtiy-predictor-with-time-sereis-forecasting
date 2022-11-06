@@ -21,5 +21,5 @@ https://green2.kingcounty.gov/lakes/Query.aspx
 
 ## ML models under consideration
 
-The team is experimenting with linear regression and logistic regression. We believe either would be good because the data we are working with
-can be either continuous or categorical.
+The team is experimenting with linear regression, logistic regression, and neural network modeling. We believe these would be good because the data 
+we are working with can be either continuous or categorical.
