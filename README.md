@@ -41,13 +41,10 @@ Since the csv file from King County contains extra infomations on the top of the
 
 ```
 # Drop all the qualifiers 
-  WQ0611_df = WQ0611_df.drop(columns=["Depth (m)", "Ammmonia Nitrogen Qualifier*", "Cond Qualifier*", "DO Qualifier*", 
-      "Ecoli Qualifier*", "Fecal Coliform Qualifier*","Nitrate Nitrite Qualifier*", "OP Qualifier*", 
-      "pH Qualifier*", "Temperature Qualifier*", "TN Qualifier*","TP Qualifier*", "Total Alkalinity Qualifier*"])
+   WQ0611_df = WQ0611_df.drop(columns=["Depth (m)", "Ammmonia Nitrogen Qualifier*", "Cond Qualifier*", "DO        Qualifier*", "Ecoli Qualifier*", "Fecal Coliform Qualifier*","Nitrate Nitrite Qualifier*", "OP            Qualifier*", "pH Qualifier*", "Temperature Qualifier*", "TN Qualifier*","TP Qualifier*", "Total            Alkalinity Qualifier*"])
 
 # Drop all the MDL columns
-  WQ0611_df = WQ0611_df.drop(columns=["AN MDL (mg/L)", "Cond MDL (µmhos/cm)", "DO MDL (mg/L)", "Nitrate Nitrite MDL (mg/L)",
-      "OP MDL (mg/L)", "TN MDL (mg/L)", "TP MDL (mg/L)", "Total Alkalinity MDL (mg/L)"])
+  WQ0611_df = WQ0611_df.drop(columns=["AN MDL (mg/L)", "Cond MDL (µmhos/cm)", "DO MDL (mg/L)", "Nitrate         Nitrite MDL (mg/L)", "OP MDL (mg/L)", "TN MDL (mg/L)", "TP MDL (mg/L)", "Total Alkalinity MDL             (mg/L)"])
 ```
 After the first look at overall data, we decided to drop all qualifiers columns and all the MDL columns since it doesn't have the importance in calculating the water quality index. 
 
@@ -56,4 +53,17 @@ After the first look at overall data, we decided to drop all qualifiers columns 
 ```
 We also dropped those extra columns since it not needed. This dropped results in 10033 rows and 12 columns. 
 
-
+```
+  # Convert string to datetime
+    WQ0611_df["CollectDate"] = pd.to_datetime(WQ0611_df["CollectDate"])
+  
+  # Apply lambda function to fill NaN space. 
+    df_2 = df_1.groupby(["CollectDate"]).apply(lambda x:x.fillna(x.mean()))
+  
+  # Drop all NaN column
+    df_3 = df_2.dropna()
+    
+  # Check the number of columns after dropping all Nan values
+    df_3.count()
+```
+This result in total of 3015 rows and 11 columns.
