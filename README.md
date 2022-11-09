@@ -11,11 +11,11 @@ Machine learning (ML) have proven to be a cutting edge tool for modeling complex
 
 We are going to collect the water quality data for the lakes of Washington State from the following the website: https://green2.kingcounty.gov/lakes/Query.aspx. We are collecting the data from 01/01/1994 till 09/30/2022. For each lake there are multiple monitoring stations, and each have a datasheet for the water quality parameters. For example, Lake Sammamish has the following monitoring stations: 0611, 0612, 0614, 0617, 0622, 0625 and M621. We will be merging these datasets as they hold the water quality data for the same lake. 
 
-The WQI values will be classified into five levels: 
+## The WQI values will be classified into five levels: 
 
 excellent (WQI=91-100), good (WQI=76-90), fair (WQI=51-75), poor(WQI=26-50), and very poor (WQI=0-25)
 
-ML Model Construction:
+## ML Model Construction:
 
 To construct the ML model for prediction of water quality index, first we need to select the proper input variables which has sufficient underlying information to predict WQI. Selection of appropriate input factors is very important as it could improve the model accuracy by eliminating the factors with undesirable impact on the predictive performance. 
 
