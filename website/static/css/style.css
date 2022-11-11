@@ -1,10 +1,23 @@
-body {
-
-    color: #f7f7f7;
-  }
-
-  .jumbotron {
-    background-image: url("../images/nasa.jpg");
-    background-size: 100% 100%;
-    text-align: center;
-  }
+.box {
+  padding: 20px;
+  display: none;
+  margin-top: 20px;
+  border: 1px solid #000;
+}
+.box img {
+  float: right;
+  width: 150px;
+  height: 100px;
+}
+.red {
+  background-image:"static/images/Map_Lake_Sammamish";
+}
+.green {
+  background-image:"static/images/Map_Lake_Union";
+}
+.blue {
+  background-image:"static/images/Map_Lake_Washington";
+}
+.white {
+  background-image:"static/images/Map_King_County";
+}

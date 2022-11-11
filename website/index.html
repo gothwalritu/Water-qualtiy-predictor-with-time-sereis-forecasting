@@ -23,47 +23,30 @@
       </div>
     </div>
     <!-- Add Lake List -->
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <form class="bg-dark">
-              <ul class="bg-dark">
-                <li class="bg-dark">
-                  <label for="lakes">Please Select a Lake</label>
-                  <select onChange="window.location.href=this.value"> 
-                    <option value="map1">Please Select a Lake</option>
-                    <option value="map2">Lake Sammamish</option> 
-                    <option value="map3">Lake Union</option>
-                    <option value="map4">Lake Washington</option>
-                  </select>
-                  <!-- <select name="lakes" id="lakes">
-                    <option value="sammamish">Sammamish</option>
-                    <option value="other">Other</option>
-                    <option value="another">Another</option>
-                    <option value="blah">Blah</option>
-                  </select> -->
-                </li>               
-              </ul>
-            </form>
-        </div>
-    </div>            
-    <h3>Map of King County, Washington</h3>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <div>
+      <select>
+        <option value="Ozero">Please Select a Lake</option>
+        <option value="Oone">Lake Sammamish</option>
+        <option value="Otwo">Lake Union</option>
+        <option value="Othree">Lake Washington</option>
+      </select>
+      </div>
+      
     <!--The div element for the map -->
-    <script>
-      <div id="map1">
-        var map1=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690931.5387246506!2d-121.80338855000001!3d47.4323925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905c8c832d7837%3A0xe280ab6b8b64e03e!2sKing%20County%2C%20WA!5e0!3m2!1sen!2sus!4v1667866632203!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div id="map2">
-        var map2=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86081.87143547226!2d-122.08327785!3d47.6055525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906de3c4edf83f%3A0x67e630b51df80d7!2sLake%20Sammamish!5e0!3m2!1sen!2sus!4v1667876029228!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div id="map3">
-        var map3=<iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21506.310609792126!2d-122.33589440000002!3d47.63995395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490150855d85f3f%3A0xeb5feb67cd0a7b6d!2sLake%20Union!5e0!3m2!1sen!2sus!4v1668038167109!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div id="map4">
-        var map4=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172085.75227357732!2d-122.38369506170953!3d47.629243706075634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014cd737a0137%3A0x9069059ce509d017!2sLake%20Washington!5e0!3m2!1sen!2sus!4v1668038295287!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </script>
+    <div class="white box">This is <strong>King County, Washington</strong>
+      <img src="static/images/Map_King_County.png" />
+    </div>
+    <div class="red box">You have selected <strong>Lake Sammamish</strong>
+      <img src="static/images/Map_Lake_Sammamish.png" />
+    </div>
+    <div class="green box">You have selected <strong>Lake Union</strong>
+      <img src="static/images/Map_Lake_Union.png" />
+    </div>
+    <div class="blue box">You have selected <strong>Lake Washington</strong>
+      <img src="static/images/Map_Lake_Washington.png" />
+    </div>
     
-    <script src="static/app.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
