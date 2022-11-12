@@ -17,3 +17,11 @@
 - I attempted to plot the data as a scatter plot.
 - I also attempted to plot the data as a bar chart.
 - I created a draft of our presentation.
+
+## Segment 2 Activities
+
+- I updated the draft of our presentation with the segment 2 topics
+- I created a simple website that:
+    - displays our logo.
+    - contains a drop-down list of the lakes we are using to calculate the water quality index.
+    - displays a map of the lake selected from the drop-down list.
