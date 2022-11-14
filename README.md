@@ -208,6 +208,29 @@ During Segment 1, I only applied both models on to one part of the lake. Now whe
 
 __Random Forest Model for Lake Sammamish__
 
+ | Random Forest Model on 0611 testing site | Random Forest Model on Big Lake | 
+| :---:         |     :---:      |  
+|![0611 testing site](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_RF_ConfusionMatrix.png)  |![Big_Lake](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/BL_RF_ConfusionMatrix.png)   |
+
+### Dashboard Exploration in Segment 2: ### 
+
+Goal: 
+    -	Visualization between lake parameters over time from 1994 to 2008
+    -	Frequency of parameter over time 
+    -	Depth visualization (optional)
+
+This is the visual that show each parameter over period of time. As we can see, the peak was during 1996 and 2006. 
+
+![Parameter over time](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Parameters_Over_Time.png)
+
+This is the visual heatmap between the average number of each parameter over period of time. The darker the color, the higher the number. The main point is to compare the mean of parameters with the mean of water quality index from 1994 to 2008.
+
+![Heatmap](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png)
+
+Frequency of distinct time eacah number of parameter appear during those months from 1994 to 2008. 
+
+![Frequency](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Frequency%20of%20AmmoniaNitrogen.png)
+
 
 
 
