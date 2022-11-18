@@ -1,3 +1,9 @@
+body {
+
+  color: #1d2a98;
+  padding-bottom: 100px;
+}
+
 .box {
   padding: 20px;
   display: none;
@@ -6,8 +12,8 @@
 }
 .box img {
   float: right;
-  width: 150px;
-  height: 100px;
+  width: 500px;
+  height: 300px;
 }
 .red {
   background-image:"static/images/Map_Lake_Sammamish";

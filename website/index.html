@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Quality Predictor</title>
 
-    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-    <div class="container">
-      <img src="static/images/water-quality-predictor-logo.png" alt="Water Quality Predictor" width="800" height="600">
+<body style="background-color:rgb(158, 190, 244)">
+    <div>
+      <img src="static/images/water-quality-predictor-logo.png" alt="Water Quality Predictor" width="800" height="600" style="width:100%;">
+      <br><br>
         <!-- Add section for Lake List -->
       <div class="row" id="lake-list">
         <div class="col-md-12">
           <div class="media">
-            <div class="media-body bg-danger">
-              <h2>List of Lakes</h2>
+            <div class="media-body">
+              <h2><font size=10>List of Lakes</font></h2>
             </div>
           </div>
         </div>
@@ -25,7 +27,7 @@
     <!-- Add Lake List -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <div>
-      <select>
+      <select style="font-size:50px;" >
         <option value="Ozero">Please Select a Lake</option>
         <option value="Oone">Lake Sammamish</option>
         <option value="Otwo">Lake Union</option>
@@ -33,20 +35,39 @@
       </select>
       </div>
       
-    <!--The div element for the map -->
-    <div class="white box">This is <strong>King County, Washington</strong>
-      <img src="static/images/Map_King_County.png" />
+    <!--The div elements for the maps and images -->
+    <div class="white box"><br><font size=5>This is <strong>King County, Washington</strong></font>
+      <br><br>
+      <img src="static/images/Map_King_County.png" style="width:100%;">
+      <br><br>
     </div>
-    <div class="red box">You have selected <strong>Lake Sammamish</strong>
-      <img src="static/images/Map_Lake_Sammamish.png" />
+    <div class="red box"><br><font size=5>You selected <strong>Lake Sammamish</strong>. Please see below for the Water Quality Forecast.</font>
+      <br><br>
+      <img src="static/images/Map_Lake_Sammamish.png" style="width:100%;">
+      <br><br>
+      <img src="static/images/Image_Lake_Sammamish.jpeg" style="width:100%;">
+      <br><br>
+      <img src="static/images/Forecast_Table_Sammamish.png" style="width:40%;">
+      <br><br>
+      <img src="static/images/Forecast_Graph_Sammamish.png" style="width:100%;">
+      <br><br>
     </div>
-    <div class="green box">You have selected <strong>Lake Union</strong>
-      <img src="static/images/Map_Lake_Union.png" />
+    <div class="green box"><br><font size=5>You selected <strong>Lake Union</strong></font>
+      <br><br>
+      <img src="static/images/Map_Lake_Union.png" style="width:100%;">
+      <br><br>
+      <img src="static/images/Image_Lake_Union.jpeg" style="width:100%;">
+      <br><br>
     </div>
-    <div class="blue box">You have selected <strong>Lake Washington</strong>
-      <img src="static/images/Map_Lake_Washington.png" />
+    <div class="blue box"><br><font size=5>You selected <strong>Lake Washington</strong></font>
+      <br><br>
+      <img src="static/images/Map_Lake_Washington.png" style="width:100%;">
+      <br><br>
+      <img src="static/images/Image_Lake_Washington.png" style="width:100%;">
+      <br><br>
     </div>
     
     <script src="static/js/app.js"></script>
+    <script src="static/css/style.css"></script>
 </body>
 </html>
