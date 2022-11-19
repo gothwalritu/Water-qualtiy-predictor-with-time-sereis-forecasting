@@ -329,20 +329,7 @@ I am doing this exercise to make the transformations to my time series data so t
 
 •	I defined a function test_stationary(timeseries), to check the stationarity of the transformed data with visualizations and statistic tests. Using this defined function I checked the stationarity of the transformed data with difference between the moving average and the actual WQI value. And got the following results:
 
-![Picture_1]()
-
-
-Results of Dickey-Fuller Test:
-Test Statistics                 -5.284812
-p-value                          0.000006
-#Lags Used                      13.000000
-Number of Observations Used    168.000000
-Critical Value (1%)             -3.469886
-Critical Value (5%)             -2.878903
-Critical Value (10%)            -2.576027
-dtype: float64
-
-
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Passed_Dicky.png)
 
 
 This time  (Test Statistics) < (Critical values) and when p value is less than 0.05.
