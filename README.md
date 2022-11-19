@@ -125,6 +125,7 @@ References: (Brown, R.M.; McClelland, N.I.; Deininger, R.A.; Tozer, R.G. A water
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(17).png?raw=true)
 
 2.	A quick look at the Data Structure with the following code:
+
 Df.head(), df.shape, df.info, df.dtypes(), df.value_counts(), df.describe
 Another quick way to get feel of the data, I plotted a histogram for each numerical attribute. To plot all the features in single go we are using the following line of code:
 
@@ -155,42 +156,50 @@ I plotted the scatter plot for each feature with the target variable to check th
 
 During the statistical exploratory analysis I faced the difficulty in plotting the scatter plots of all the features with the target variable in a grid format, but with the help of TA I was able to sort that out.
 
-## C.	Machine Learning for WQI prediction
 
-In this section of the project, I applied the neural networks to predict the WQI. 
+## C.	Machine Learning Models
 
-I used the following resources:
+After performing the exploratory data analysis, I have a better understanding of the kind of data I am dealing with. At this point I am ready to employ machine learning models to our data. 
 
-•	Scikit-Learn
+•	The first step is to frame the problem and find an objective. 
 
-•	Pandas
+So, here I wanted to predict the water quality index (WQI) as a target variable which is dependent on independent feature variables such as using temperature, pH, turbidity, dissolved oxygen (DO), biochemical oxygen demand (BOD), and concentrations of other pollutants). Once, I know the WQI I want to predict it for future years. So, I am going to employ two machine learning models:
 
-•	TensorFlow
+### A) Supervised regression ANN model.
+### B) Time series forecasting model.
 
-•	Keras
+•	This is a multiple regression univariate problem as I am trying to predict a single value for each month. There is no continuous flow of data coming into the system, and there is no particular need to do the adjustment to this data and is small enough to fit in memory, hence it is a case of plain batch learning. 
 
-1.	## Data Preprocessing
+•	For a regression problem following are the typical ways to measure the performance of the model: “Mean Squared Error”, “Residual Sum of Squares” and “Mean Absolute Error”. These methods measure the distance between two vectors, the vectoe of prediction and vector of target values. In this project I am using “Mean Squared Error”and “Residual Sum of Squares” method to measure the performance of my machine learning models. 
+
+Develop a Data Analysis Pipelines: ??
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(61).png)
+
+
+
+## D.	ANN regression model 
+
+•	I applied the ANNregression model to predict the WQI and I used the following resources:
+    	Scikit-Learn
+    	Pandas
+    	TensorFlow
+    	Keras
+
+
+#### •	 Data Preprocessing
 
 I dropped the first column “CollectDate” from  the data frame as the machine learning models accepts only numerical values. Then, I assigned the target and features arrays to its respective variables and performed the splitting of the preprocessed data in to training and testing datasets.
 
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(24).png?raw=true)
 
- In the development of ANN model: 
-a) while assigning the values to the x, and y variable, the model code run was giving error that the "Expected 2D array, got 1D array instead. I resolved it with mentioning the ".reshape(-1,1).
+#### •	Compile, Train and Evaluate the Model
 
+    	I defined the input features and hidden nodes for each hidden layers for deep neural network model. 
+    	I defined checkpoint path and the filenames.
+    	Complied the model with loss as binary_crossentropy and optimizer as “adam”.
 
-
-## Compile, Train and Evaluate the Model
-
-•	I defined the input features and hidden nodes for each hidden layers for deep neural network model. 
-
-•	I defined checkpoint path and the filenames.
-
-•	Complied the model with loss as binary_crossentropy and optimizer as “adam”.
-
-•	Created a callback which saves the model’s weight every 5 epochs.
-
-•	Then evaluated the model using test data and exported to HDF5 file so that anyone can use it later.
+ In the development of ANN model I faced some difficulty, while assigning the values to the x, and y variable, the model code run was giving error that the "Expected 2D array, got 1D array instead. I resolved it with mentioning the ".reshape(-1,1). After a few trials the ANN model run was successful and giving low MSE values as shown in the screenshot. 
 
 
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(25).png?raw=true)
@@ -203,4 +212,168 @@ a) while assigning the values to the x, and y variable, the model code run was g
 
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(29).png?raw=true)
 
+
+## E.	Time Series Forecasting Model
+
+A time series is a succession of chronologically ordered data spaced at some specified intervals. The forcasting means predicting the future value of a time series by using models to study its past behavior (autoregressive).
+
+#### Skforecast ML Model:
+
+•	I choose “SKforecast mode” for time series forecasting with Python and Scikit-learn libraries based on the TA’s recommendation for its simplicity. Skforecast is a simple library that contains the classes and functions necessary to adapt any Scikit-learn regression model to forecasting problems.
+
+•	To apply machine learning models to forecasting problems, the time series need to be transformed into a matrix in which each value is related to the time window that precedes it. Hence, I created a dataframe with time index and “WQI” column and removed all the repeated values of time/date. 
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(63).png)
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/mean.png)
+
+•	I had difficulty with this model as the date index in the dataset was not on the fixed regular intervals, but on different dates. So, to sort this problem I had to make an assumption that the date for observations are all on the first day of the month. With the help of Instructor “Khaled “ I was able to construct a new column with the date with first day of the month. So, I replaced the actual time/date index with the new one which I created for the first day of the month and dropped the old index from the dataset. 
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/date_change.png)
+
+•	Now, I have a time series for “WQI” with monthly date of observation between 1994 and 2008, indented to create an auto regressive model capable of predicting future monthly “WQI”.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(65)_Copy.png)
+
+
+•	The date in the index should be stored in datetime format and since the data is monthly, the frequency is set as the Monthly Started ‘MS’.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/frequency.png)
+
+•	Then split the data into train and test. Mention the number of steps as the duration of months as the test set to evaluate the predictive capacity of the model.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Split_and%20train.png)
+
+
+•	With the ForecasterAutoreg class, I created a  model and trained it with a “LinearRegressor” regressor with a time window of 12 lags. This means that the model uses the previous 12 months as predictors.
+
+•	So, the model run successfully but the predicted results were not in the right format. The index of the output table was overwritten with a RangeIndex of step 1 and not in the continuation of the training dataset. So, I had to write the following code mentioned in the screenshot to make it in correct datetime index.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Skpredictions.png)
+
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Model.png)
+
+
+•	Once the model is trained, the test data is predicted for 60 months into the future.
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(72)_copy.png)
+
+•	I evaluated the performance of this model with the “Mean Squared Error” value. And it is producing the 820, which is a huge number for mse. It means that the performance of the model is poor and the model needed some improvement. 
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/mse.png)
+
+•	To improve the model Hyperparameter tuning could be done, which means changing a few parameters of the model and re-evaluating the performance. I am planning to improve this model in coming months.
+
+•	I had difficulty in making the time series 
+
+
+## ARIMA ML Model
+
+•	When I was working with Skforecast model I was unable to move further as I was facing some difficulties with the code. So, I wanted to explore other methods for time series forecasting.  Hence, I researched a bit on the internet and found ARIMA model for time series forecasting.
+But there was one condition to this model that it can not be applied to the data which is not stationary. Hence, I needed to check for the stationarity of the dataset.
+
+•	There are different components of time series data, most of the time series has Trend, Seasonality, Irregularity, cyclic variation associated with them. Any time series may be split into the following components: Base Level + Trend + Seasonality + Error. 
+
+•	The following screenshot is showing trend of the dataset.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/trend.png)
+
+•	A trend is observed when there is an increasing or decreasing slope observed in the time series. Whereas seasonality is observed when there is a distinct repeated pattern observed between regular intervals due to seasonal factors. It could be because of the month of the year, the day of the month, weekdays or even time of the day.
+•	However, It is not mandatory that all time series must have a trend and/or seasonality. A time series may not have a distinct trend but have a seasonality. The opposite can also be true. So, a time series may be imagined as a combination of the trend, seasonality and the error terms.
+•	Before performing the time series analysis first we need to check the stationarity of the time series data.Time series data analysis require that the time series data to be stationary.
+
+
+•	How to check if the data is stationary or not:
+
+1.	Constant mean
+2.	Constant Variance
+3.	Autocovariance that does not depend on time.
+
+If all these conditions are met than we can apply the time series analysis.
+
+•	To check the stationarity there are two popular test:
+
+1.	Rolling Statistics: It is a visual technique and we plot the moving average and variance to see if its varying with time.
+
+3.	Augmented Dicky-fuller Test (ADCF): this is a statistical test to check the stationarity.
+
+#### Null hypothesis: The time series is non-stationary in nature.
+#### Alternate hypothesis: The time series is stationary in nature.
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/stationarity_test.png)
+
+The test results comprise of a Test Statistic and some Critical values. 
+If the (Test Statistics) < (Critical values) and when p value is less than 0.05.
+we reject the null hypothesis and say that the series is stationary.
+In our time series data here are the statistics:
+
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/dicky_test_results.png)
+
+So, we can see that the test statistic is greater than all the critical values at different significance levels. It means we failed to reject the null hypothesis and we can say that this time series data is non-stationary.
+
+•	Hence, I needed to make the data stationary by performing transformations to it. So, I changed the time series data to log scale and performed the stationarity test again and it failed the test again.
+
+•	Next, I am going to get the difference between the moving average and the actual WQI value. 
+I am doing this exercise to make the transformations to my time series data so that it can become stationary to make it eligible for the time series analysis and predictions. So, I subtracted the moving average from the log scale dataset and checked the stationarity. 
+
+•	I defined a function test_stationary(timeseries), to check the stationarity of the transformed data with visualizations and statistic tests. Using this defined function I checked the stationarity of the transformed data with difference between the moving average and the actual WQI value. And got the following results:
+
 ![Picture_1]()
+
+
+Results of Dickey-Fuller Test:
+Test Statistics                 -5.284812
+p-value                          0.000006
+#Lags Used                      13.000000
+Number of Observations Used    168.000000
+Critical Value (1%)             -3.469886
+Critical Value (5%)             -2.878903
+Critical Value (10%)            -2.576027
+dtype: float64
+
+
+
+
+This time  (Test Statistics) < (Critical values) and when p value is less than 0.05.
+Hence, we reject the null hypothesis and say that the transformed time series data “datasetLogScaleMinusMovingAverage” is stationary.
+
+•	Now, I am ready to apply ARIMA Model. AR+MA: AR is the Auto regressive part of the model and MA, is the Moving average part of the model , I is the integration of the two. AR gives autoregressive lags i.e. P, MA gives the moving average i.e. Q and I is the integration is d (order of differentiation). To predict the “P” we need to plot PACF graph, to predict Q plot ACF graph. 
+
+ARIMA model in words:
+
+Predicted Yt = Constant + Linear combination Lags of Y (upto p lags) + Linear Combination of Lagged forecast errors (upto q lags)
+
+The objective, therefore, is to identify the values of p, d and q. With the code and graph mentioned in the screenshot I was able to find the p and q values to substitute it in the ARIMA model.
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/p_q%26d.png)
+
+•	Before applying ARIMA model I splitted the data into train and train dataset.
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Split_ARIMA.png)
+
+•	Imported a few libraries and applied the ARIMA model as follows:
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/ARIMA_Model.png)
+
+•	The following graph shows the test dataset and predicted dataset with its performance value as residual squared sum.
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Test_predicted_ARIMA.png)
+
+
+•	The following graph shows the train dataset and predicted dataset with its performance value as residual squared sum.
+
+![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Test_predicted_ARIMA.png)
+
+•	The model run was successful with better performance than the Skforecast model. However, I find this model to be more complex to my understanding. And the after getting the predicted results it requires us to do the inverse the transformation which we did to the dataset to make it stationary. However, I would like to keep exploring more about it to get deeper understanding of ARIMA model and apply it in different time series forecasting.
+
