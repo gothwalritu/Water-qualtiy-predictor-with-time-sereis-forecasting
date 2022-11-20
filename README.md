@@ -215,7 +215,7 @@ I dropped the first column “CollectDate” from  the data frame as the machine
 
 ## E.	Time Series Forecasting Model
 
-A time series is a succession of chronologically ordered data spaced at some specified intervals. The forcasting means predicting the future value of a time series by using models to study its past behavior (autoregressive).
+A time series is a succession of chronologically ordered data spaced at some specified intervals. The forecasting means predicting the future value of a time series by using models to study its past behavior (autoregressive).
 
 #### Skforecast ML Model:
 
