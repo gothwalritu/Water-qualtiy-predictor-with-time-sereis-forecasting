@@ -133,6 +133,8 @@ Another quick way to get feel of the data, I plotted a histogram for each numeri
 
 Histogram shows the number of instances that has a given value range. The hist() method relies on Matplotlib, which in turn relies on a user-specified graphical backend to draw on the screen. So, before we plot anything, we need to specify which backend Matplotlib should use using jupyter's magic command to specify which backend Matplotlib should use. The simplest option is to use Jupyter’s magic command %Matplotlib inline. This tells Jupyter to set up Matplotlib so it uses Jupyter’s own backend. Plots then rendered within the notebook itself. 
 
+The histogram plots gives the visualization of the distribution and the median of the attributes. Many histogram are tail heavy, means they extend much farther to the right of the median than to left. This may make it a bit harder for machine learning algorithms to detect patterns. I need to try transforming these attributes later on to have more bell-shaped distributions.
+
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(19).png?raw=true)
 
 3.	I visualized the counts in WQI using: WQI_df["WQI"].plot.density()
@@ -149,7 +151,10 @@ Histogram shows the number of instances that has a given value range. The hist()
 
 
 I plotted the scatter plot for each feature with the target variable to check the relationship between the two. It is the visualization way to check if there is any relationship pattern between the two variables. The "WQI" is on the x-axis and the features are on the y-axis. 
+The correlation graphs tell us if the relationship of each feature with WQI is strong or weak.
+With the data exploratory analysis and visualization we can identify the quirks in the data and may be clean it up before feeding the data to machine learning algorithm.
 
+ 
 
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(23).png?raw=true)
 
