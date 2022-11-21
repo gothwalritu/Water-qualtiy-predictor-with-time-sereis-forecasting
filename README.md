@@ -9,21 +9,7 @@ The water quality index (WQI) is extensively used to assess and classify the qua
 Machine learning (ML) have proven to be a cutting edge tool for modeling complex non-linear behaviors in water resources research and has been also used for assessing the water quality. However, there are many techniques in ML which could be applied to estimate and predict the WQI. In the first section of the project we would like to explore the different techniques of machine learning and compare them with each other in terms of its accuracy. We would like to choose the one technique which is most suitable for the kind of data we have in order to predict the WQI of lakes in Washington state. We are going to refer the article Khoi et al., (2022) for choosing the approach to perform the ML.
 
 
-## ML Model Construction:
 
-To construct the ML model for prediction of water quality index, first we need to select the proper input variables which has sufficient underlying information to predict WQI. Selection of appropriate input factors is very important as it could improve the model accuracy by eliminating the factors with undesirable impact on the predictive performance. 
-
-For ANN, first plot the data to check if there is any outlier.
-
-Throughout this implementation walkthrough, take some time to critically think about the following:
-
-•	What about this dataset makes it complex? Is it a variable? Is it the distribution of values? Is it the size of the dataset?
-
-•	Which variables should I investigate prior to implementing my model? What does the distribution look like? Hint: Use Pandas' Series.plot.density() method to find out.
-
-•	What outcome am I looking for from the model? Which activation function should I use to get my desired outcome?
-
-•	What is my accuracy cutoff? In other words, what percent testing accuracy must my model exceed?
 
 We are going to collect the water quality data for the lakes of Washington State from the following the website: https://green2.kingcounty.gov/lakes/Query.aspx. We are collecting the data from 01/01/1994 till 09/30/2022. For each lake there are multiple monitoring stations, and each have a datasheet for the water quality parameters. For example, Lake Sammamish has the following monitoring stations: 0611, 0612, 0614, 0617, 0622, 0625 and M621. We will be merging these datasets as they hold the water quality data for the same lake. 
 
@@ -136,6 +122,22 @@ During the statistical exploratory analysis I faced the difficulty in plotting t
 
 
 ## C.	Machine Learning Models
+
+#### ML Model Construction:
+
+To construct the ML model for prediction of water quality index, first we need to select the proper input variables which has sufficient underlying information to predict WQI. Selection of appropriate input factors is very important as it could improve the model accuracy by eliminating the factors with undesirable impact on the predictive performance. 
+
+For ANN, first plot the data to check if there is any outlier.
+
+Throughout this implementation walkthrough, take some time to critically think about the following:
+
+•	What about this dataset makes it complex? Is it a variable? Is it the distribution of values? Is it the size of the dataset?
+
+•	Which variables should I investigate prior to implementing my model? What does the distribution look like? Hint: Use Pandas' Series.plot.density() method to find out.
+
+•	What outcome am I looking for from the model? Which activation function should I use to get my desired outcome?
+
+•	What is my accuracy cutoff? In other words, what percent testing accuracy must my model exceed?
 
 After performing the exploratory data analysis, I have a better understanding of the kind of data I am dealing with. At this point I am ready to employ machine learning models to our data. 
 
