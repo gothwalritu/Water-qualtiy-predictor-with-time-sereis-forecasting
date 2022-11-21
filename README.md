@@ -7,8 +7,7 @@ recreational activities, as well as which locations have potable water.
 
 In this project we will develop a tool which will show locations around Lake Sammamish in Washington State, and display which are safe for
 recreational and potability use. It will be an interactive tool which takes user input for geolocation and recommends the locations which 
-are fit for potability and recreational uses. The location will be displayed using marker layer map and pop-up markers, information about 
-weather and water quality.
+are fit for potability and recreational uses. 
 
 ## ERD
 
@@ -19,7 +18,13 @@ We used Quick DBD to create a ERD of our data
 
 https://green2.kingcounty.gov/lakes/Query.aspx
 
-## ML models under consideration
+## ML models 
 
-The team is experimenting with linear regression, logistic regression, and neural network modeling. We believe these would be good because the data 
-we are working with can be either continuous or categorical.
+We wanted to predict the water quality index (WQI) as a target variable which is dependent on independent feature variables such as using temperature, pH, turbidity, dissolved oxygen (DO), biochemical oxygen demand (BOD), and concentrations of other pollutants). Once, the WQI is known we wanted to predict it for future years. So, we  to applied two machine learning models:
+
+A) Supervised regression ANN model.
+B) Time series forecasting model.
+
+## Link to Google Slides draft presentation:
+
+https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit#slide=id.g18d6e3615c7_5_1
