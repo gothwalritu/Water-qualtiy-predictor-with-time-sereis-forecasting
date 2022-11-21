@@ -31,8 +31,10 @@ We wanted to predict the water quality index (WQI) as a target variable which is
 
 #### B) Time series forecasting model.
 
+## Link to Tableau ##
 
+[Tableau Link](https://public.tableau.com/app/profile/ling7171/viz/CorrelationatLakeSammamish/WQI?publish=yes)
 
 ## Link to Google Slides draft presentation:
 
-https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit#slide=id.g18d6e3615c7_5_1
+[Group 9 Presentation](https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit#slide=id.g18d6e3615c7_5_1)
