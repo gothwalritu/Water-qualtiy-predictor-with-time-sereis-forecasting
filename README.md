@@ -231,6 +231,71 @@ Accuracy Score is 0.0
 |![0611 testing site](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_RF_ConfusionMatrix.png)  |![Big_Lake](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/BL_RF_ConfusionMatrix.png)   |
 
 
+## Dashboard Exploration in Segment 2: ## 
+
+Goal: 
+    -	Visualization between lake parameters over time from 1994 to 2008
+    -	Frequency of parameter over time 
+    -	Depth visualization (optional) since depth was removed during data cleaning process. 
+
+This is the visual that show each parameter over period of time. As we can see, the peak was during 1996 and 2006. 
+
+![Parameter over time](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Parameters_Over_Time.png)
+
+This is the visual heatmap between the average number of each parameter over period of time. The darker the color, the higher the number. The main point is to compare the mean of parameters with the mean of water quality index from 1994 to 2008.
+
+![Heatmap]([https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png))
+
+Frequency of distinct time each number of parameters appear during those months from 1994 to 2008.
+
+![Frequency](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Frequency%20of%20AmmoniaNitrogen.png)
+
+## Dashboard Exploratory in Segment 3: ##
+
+Problem from previous Segment:
+
+-	The heatmap doesn’t related nor adding any story to the main project. 
+-	Need to show a correlation as scatter plot. 
+
+Goal: 
+
+-	Have more scatter plot with linear regression line with all the parameters.
+- Google Slide for individual presentation. 
+
+![Correlation between Ammonia and WQI](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Corr%20Ammonia%20vs%20WQI.png)
+
+This graph shows the correlation between Ammonia Nitrogen and WQI. The R-Squared is 0.0038556 and P-value is 0.390971. As we can see, the correlation in this graph is low since the plot is very scattered away from the linear line. 
+
+
+ | Parameters Correlation | Parameters Correlation | Parameters Correlation |
+| :---:         |     :---:      |    :---:   |
+| ![Corr1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(1).png)   | ![Corr2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(2).png)     | ![Corr3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(3).png)    |
+
+
+In these correlations between all parameter with WQI, we can see Dissolved Oxygen, Fecal Coliform, Nitrate Nitrite and Total Nitrogen has a stronger correlation with WQI accodring to the graph since the plot density is more comparing to other parameters such as Ammonia, Conductivity, Orthphosphate Phosphate, PH, Temperature and Total Phosphorus. 
+
+This is where you can find the [Tableau link](https://public.tableau.com/app/profile/ling7171/viz/CorrelationatLakeSammamish/WQI) for further details. 
+
+## Google Slide ## 
+
+Here are some preparation for my part in [GG Slide](https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit#slide=id.p), in this group, I am taking part as Tableau Titan. 
+
+![Slide 1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%201.png)
+
+Goal: to make the story fun and related. 
+
+![Slide 2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%202.png)
+
+Goal: to grab attention and make the topic more interesting. 
+
+![Slide 3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%203.png)
+
+Goal: to have a define and clear goal for our overall project.
+
+![Slide 4](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%204.png)
+
+Goal: Tableau visualization. Correlation between parameters. 
+
 
 
 
