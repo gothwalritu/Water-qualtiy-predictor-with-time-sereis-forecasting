@@ -68,34 +68,7 @@ With the following line of code we replaced the null values with the mean of the
 
 ![Picture_1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ritu_Gothwal/Ritu_Gothwal/ScreeenShots/Screenshot%20(34).png?raw=true)
 
-6.	I checked the null values again and summary of the null values in each column is as follows:
-
-CollectDate                           0
-
-SampleNum                             0
-
-Ammmonia Nitrogen (mg/L)           1477
-
-Conductivity (µmhos/cm)              68
-
-Dissolved Oxygen (mg/L)              80
-
-Fecal Coliform (CFU/100ml)         6991
-
-Nitrate Nitrite (mg/L)             1358
-
-Orthophosphate Phosphate (mg/L)    1455
-
-pH                                 1881
-
-Temperature (°C)                     49
-
-Total Nitrogen (mg/L)              1413
-
-Total Phosphorus (mg/L)              79
-
-
-We got these null values because in few months there was no reading and hence we could not get any mean value in that month which resulted in the null values.
+6.	I checked the null values again and summary of the null values in each column. I got the null values because in few months there was no reading and hence we could not get any mean value in that month which resulted in the null values.
 
 
 7.	This time we dropped the rows with null values.
@@ -186,9 +159,13 @@ Develop a Data Analysis Pipelines: ??
 ## D.	ANN regression model 
 
 •	I applied the ANNregression model to predict the WQI and I used the following resources:
+
     	Scikit-Learn
+    
     	Pandas
+    
     	TensorFlow
+    
     	Keras
 
 
