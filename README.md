@@ -85,4 +85,153 @@ After this, one of my teammate Ritu will append all the data of all the testing 
 
 The reason why we decided to have 1 person append all the testing sites was data inconsistency. Although we tried to download the dataset from 1 source, we all have different number in columns and rows. 
 
+### Segment 2 ###
+
+![](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%201/Surfing%20the%20neural%20net.png)
+
+After looking at this graph, we decided to test the data out with Linear/Logistic Regression for high interpretability/low accuracy and Random Forest for medium interpretability/high accuracy. 
+
+Goal:
+-	Applied 2 machine learning models to the entire lake dataset 
+-	See if logistic regression model is working
+-	See if random forest model is working
+
+Tasks:
+-	Applied logistic regression model on testing site 0611
+-	Applied random forest model on testing site 0611 
+- Comparing result on 0611 testing site with the entire lake dataset
+
+# Logistic Regression Model for 0611 testing site # 
+
+```
+    # Seperate the Features (X) from the Target (y)
+    y = df_3['WQ']
+    X = df_3.drop(['WQ', 'CollectDate'], axis='columns')
+
+    # Split our data into training and testing 
+    from sklearn.model_selection import train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(X, y,random_state=42)
+    X_train.shape
+
+    # Create a Logistic Regression Model
+    classifier = LogisticRegression(solver='lbfgs', random_state=0)
+    classifier
+    classifier.fit(X_train, y_train)
+  
+```
+Problem encountered:
+-	Data was continuous => The solution was to convert the data to able to run the model. 
+
+
+```
+    # Import model for convert data
+    from sklearn import preprocessing
+    from sklearn import utils
+
+    # Convert y values to categorical values
+    lab = preprocessing.LabelEncoder()
+    y_transformed = lab.fit_transform(y)
+
+    # Prediction outcomes for test data set 
+    predictions = classifier.predict(X_test)
+    results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
+    results.head(20)
+
+    from sklearn.metrics import accuracy_score
+    print(accuracy_score(y_test, predictions))
+
+```
+
+Result:
+
+![0611_prediction_actual](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_Prediction_Actual.png)
+
+Accuracy Score is 0.0 
+
+# Random Forest Model for 0611 testing site #
+
+```
+    # Define the features set
+    X = WQ0611_clean_df.copy()
+    X = X.drop(['WQ','CollectDate'], axis='columns')
+    X.head()
+
+    # Define the target set.
+    y = WQ0611_clean_df["WQ"].ravel()
+    y[:20]
+
+    # Splitting into Train and Test sets.
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
+
+    # Creating a StandardScaler instance.
+    scaler = StandardScaler()
+    # Fitting the Standard Scaler with the training data.
+    X_scaler = scaler.fit(X_train)
+
+    # Scaling the data.
+    X_train_scaled = X_scaler.transform(X_train)
+    X_test_scaled = X_scaler.transform(X_test)
+
+    # Fit the random forest classifier
+    # Create a random forest classifier.
+    rf_model = RandomForestClassifier(n_estimators=128, random_state=78)
+
+    # Fitting the model
+    rf_model = rf_model.fit(X_train_scaled, y_train)
+
+    # Making predictions using the testing data.
+    predictions = rf_model.predict(X_test_scaled)
+
+    # Calculating the confusion matrix.
+    cm = confusion_matrix(y_test, predictions)
+
+    # Create a DataFrame from the confusion matrix.
+    cm_df = pd.DataFrame(
+        cm, index=["Actual 0", "Actual 1", "Actual 2", "Actual 3", "Actual 4", "Actual 5"],
+        columns=["Predicted 0", "Predicted 1", "Predicted 2", "Predicted 3", "Predicted 4", "Predicted 5"])
+    cm_df
+
+```
+
+![0611_RF_Confusion_Matrix](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_RF_ConfusionMatrix.png)
+
+```
+    # Calculating the accuracy score.
+    acc_score = accuracy_score(y_test, predictions)# Displaying results
+    print("Confusion Matrix")
+    display(cm_df)
+    print(f"Accuracy Score : {acc_score}")
+    print("Classification Report")
+    print(classification_report(y_test, predictions))
+    
+    # Calculate feature importance in the Random Forest model.
+    importances = rf_model.feature_importances_
+    importances
+
+    # We can sort the features by their importance.
+    sorted(zip(rf_model.feature_importances_, X.columns), reverse=True)
+
+```
+
+![0611_importance](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_RF_importances.png)
+
+
+## Set Up Machine Learning Model on Lake Sammamish ## 
+
+## Logistic Regression Model for Lake Sammamish ##
+
+ | Prediction/Actual Model on 0611 testing site | Preditction/Actual Model on Big Lake | 
+| :---:         |     :---:      |  
+|![0611 testing site](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_Prediction_Actual.png)  |![Big_Lake](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/BL_Prediction_Actual.png)   |
+
+## Random Forest Model for Lake Sammamish ##
+
+ | Random Forest Model on 0611 testing site | Random Forest Model on Big Lake | 
+| :---:         |     :---:      |  
+|![0611 testing site](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/0611_RF_ConfusionMatrix.png)  |![Big_Lake](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/BL_RF_ConfusionMatrix.png)   |
+
+
+
+
+
 
