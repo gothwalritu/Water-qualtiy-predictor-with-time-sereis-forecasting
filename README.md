@@ -125,7 +125,7 @@ During the statistical exploratory analysis I faced the difficulty in plotting t
 
 #### ML Model Construction:
 
-To construct the ML model for prediction of water quality index, first we need to select the proper input variables which has sufficient underlying information to predict WQI. Selection of appropriate input factors is very important as it could improve the model accuracy by eliminating the factors with undesirable impact on the predictive performance. 
+To construct the ML model for prediction of water quality index, we need to select the proper input variables which has sufficient underlying information to predict WQI. Selection of appropriate input factors is very important as it could improve the model accuracy by eliminating the factors with undesirable impact on the predictive performance. 
 
 For ANN, first plot the data to check if there is any outlier.
 
