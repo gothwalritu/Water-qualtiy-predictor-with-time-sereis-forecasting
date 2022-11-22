@@ -25,17 +25,11 @@ for the next 12 months.
 - Ritu was able to find a formula to calculate the Water Quality Index (WQI).
 - I used that formula and was able to translate it into code that calculated the WQI for each row of
   data, and saved the value in a new column.
-  
-<img width="754" alt="WQI_formula_code" src="https://user-images.githubusercontent.com/106849689/202930826-8b2fe294-326d-4fdf-8fd2-6f99fd4865ff.png">
-
+    - add pic of code here
 - I used that new data set to experiment with the linear regression model.
--
-<img width="368" alt="Multi_Lin_Reg" src="https://user-images.githubusercontent.com/106849689/202930849-36c81d75-bc1c-411d-90a2-1350e53c9c62.png">
-
+    - add pic of lin reg here
 - I also scaled the data, then ran the linear regreassion model.
-
-<img width="392" alt="Scaled_Multi_Lin_Reg" src="https://user-images.githubusercontent.com/106849689/202930878-819b5610-261e-40b7-b40c-a911e2b89caa.png">
-
+    - add pic of scaling here
 - I attempted to plot the data as a scatter plot.
 - I also attempted to plot the data as a bar chart.
 - I created a draft of our presentation:
@@ -55,9 +49,7 @@ for the next 12 months.
     - displayed our logo.
     - contained a drop-down list of the lakes we are using to calculate the water quality index.
     - displayed a map image of the lake selected from the drop-down list.
-
-<img width="898" alt="WQI_Pred_Webpage" src="https://user-images.githubusercontent.com/106849689/202930929-b3819be8-3dde-4c8b-be72-c2655f5a8bfc.png">
-
+    - add pic of website here
 
 ### Segment 3
 
