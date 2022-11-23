@@ -145,8 +145,8 @@ After performing the exploratory data analysis, I have a better understanding of
 
 So, here I wanted to predict the water quality index (WQI) as a target variable which is dependent on independent feature variables such as using temperature, pH, turbidity, dissolved oxygen (DO), biochemical oxygen demand (BOD), and concentrations of other pollutants). Once, I know the WQI I want to predict it for future years. So, I am going to employ two machine learning models:
 
-### A) Supervised regression ANN model.
-### B) Time series forecasting model.
+###  Supervised regression ANN model.
+###  Time series forecasting model.
 
 •	This is a multiple regression univariate problem as I am trying to predict a single value for each month. There is no continuous flow of data coming into the system, and there is no particular need to do the adjustment to this data and is small enough to fit in memory, hence it is a case of plain batch learning. 
 
