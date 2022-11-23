@@ -256,7 +256,6 @@ A time series is a succession of chronologically ordered data spaced at some spe
 
 •	To improve the model Hyperparameter tuning could be done, which means changing a few parameters of the model and re-evaluating the performance. I am planning to improve this model in coming months.
 
-•	I had difficulty in making the time series 
 
 
 ## ARIMA ML Model
