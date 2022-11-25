@@ -1,0 +1,21 @@
+body {
+
+  color: #000001;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-attachment: fixed;
+}
+
+.red {
+  background-image:"static/images/Map_Lake_Sammamish";
+}
+.green {
+  background-image:"static/images/Map_Lake_Union";
+}
+.blue {
+  background-image:"static/images/Map_Lake_Washington";
+}
+.white {
+  background-image:"static/images/Map_King_County";
+}
