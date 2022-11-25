@@ -262,14 +262,14 @@ Goal:
 -	Have more scatter plot with linear regression line with all the parameters.
 - Google Slide for individual presentation. 
 
-![Correlation between Ammonia and WQI](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Corr%20Ammonia%20vs%20WQI.png)
+![Correlation between Ammonia and WQI](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Corr%20Ammonia%20vs%20WQI.png)
 
 This graph shows the correlation between Ammonia Nitrogen and WQI. The R-Squared is 0.0038556 and P-value is 0.390971. As we can see, the correlation in this graph is low since the plot is very scattered away from the linear line. 
 
 
  | Parameters Correlation | Parameters Correlation | Parameters Correlation |
 | :---:         |     :---:      |    :---:   |
-| ![Corr1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(1).png)   | ![Corr2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(2).png)     | ![Corr3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Correlation(3).png)    |
+| ![Corr1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(1).png)   | ![Corr2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(2).png)     | ![Corr3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(3).png)    |
 
 
 In these correlations between all parameter with WQI, we can see Dissolved Oxygen, Fecal Coliform, Nitrate Nitrite and Total Nitrogen has a stronger correlation with WQI accodring to the graph since the plot density is more comparing to other parameters such as Ammonia, Conductivity, Orthphosphate Phosphate, PH, Temperature and Total Phosphorus. 
@@ -280,19 +280,19 @@ This is where you can find the [Tableau link](https://public.tableau.com/app/pro
 
 Here are some preparation for my part in [GG Slide](https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit#slide=id.p), in this group, I am taking part as Tableau Titan. 
 
-![Slide 1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%201.png)
+![Slide 1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Slide%201.png)
 
 Goal: to make the story fun and related. 
 
-![Slide 2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%202.png)
+![Slide 2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Slide%202.png)
 
 Goal: to grab attention and make the topic more interesting. 
 
-![Slide 3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%203.png)
+![Slide 3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Slide%203.png)
 
 Goal: to have a define and clear goal for our overall project.
 
-![Slide 4](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment%203/Slide%204.png)
+![Slide 4](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Slide%204.png)
 
 Goal: Tableau visualization. Correlation between parameters. 
 
