@@ -1,4 +1,4 @@
-# Final_Project_UCB_Bootcamp
+# Water Quality Index Final Project - Group 9: Ritu Gothwal, Erica Gutierrez, Ling Hoang Do, Nicole Sanchez
 
 ## Introduction
 
