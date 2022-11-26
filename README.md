@@ -28,7 +28,9 @@ table as well as a water quality prediction graph.
 
 <img width="1269" alt="save_to_db" src="https://user-images.githubusercontent.com/106849689/204071145-a11c75bd-0dcd-4a1a-8cd0-a9e32a0a060a.png">
 
-- Create two tables for Database 
+- Create final tables for Database 
+
+![King_County_WQI_final_Tables](https://user-images.githubusercontent.com/106849689/204071310-b9945dd5-1b86-4e14-9a5f-43eaa8e9a93d.png)
 
 - Create an Engine to Database 
 
