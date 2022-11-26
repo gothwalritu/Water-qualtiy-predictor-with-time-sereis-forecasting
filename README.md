@@ -1,5 +1,5 @@
 # Water Quality Index Final Project
-#Group 9: Ritu Gothwal, Erica Gutierrez, Ling Hoang Do, Nicole Sanchez
+## Group 9: Ritu Gothwal, Erica Gutierrez, Ling Hoang Do, Nicole Sanchez
 
 ## Introduction
 
