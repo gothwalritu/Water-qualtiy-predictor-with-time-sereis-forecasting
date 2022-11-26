@@ -428,3 +428,68 @@ This graph shows the correlation between Ammonia Nitrogen and WQI. The R-Squared
 In these correlations between all parameter with WQI, we can see Dissolved Oxygen, Fecal Coliform, Nitrate Nitrite and Total Nitrogen has a stronger correlation with WQI accodring to the graph since the plot density is more comparing to other parameters such as Ammonia, Conductivity, Orthphosphate Phosphate, PH, Temperature and Total Phosphorus. 
 
 This is where you can find the [Tableau link](https://public.tableau.com/app/profile/ling7171/viz/CorrelationatLakeSammamish/WQI) for further details. 
+
+
+## Website
+
+- First, we created a simple website that:
+    - displays our logo.
+    - contains a drop-down list of the lakes we are using to calculate the water quality index.
+    - displays a map of the lake selected from the drop-down list.
+    
+
+
+- We updated the website by:
+    - adding more formatting to the text and background.
+    - replacing the map images with interactive maps.
+    
+<img width="898" alt="WQI_Pred_Webpage" src="https://user-images.githubusercontent.com/106849689/204072178-30292904-a6d0-425f-940a-59b7fe9f91ee.png">
+
+- We updated the website to include the WQI forecasts for the last 2 lakes.
+
+
+
+- I created a draft of our presentation:
+    https://docs.google.com/presentation/d/16ZrQ_KEqKrhyH9IsrkqKFNsgMb9nEmqp7MNBwoZUki4/edit?usp=sharing
+
+- The presenation contained:
+    - the reason why they selected this topic.
+    - the description of the source of data.
+    - the questions we hope to answer with the data.
+
+### Segment 2
+
+- I updated the presentation to add:
+    - a description of how we, as a team, explored the data.
+    - a desctiption of how we, as a team, analyzed the data.
+
+### Segment 3
+
+- I worked with the team to update the presentation with their own visuals for the slides they are
+  presenting.
+- We, as a team, created slides that showcased the technologies, languages, tools, and algorithms
+  used throughout the project
+- I practiced how I would present my slides during our group presentation.
+
+
+### Segment 4
+
+- I updated the presentation to:
+    - include the result of analysis.
+    - add recommendation for future analysis.
+    - describe anything the team would have done differently.
+
+
+## Conclusion and Recommendations
+
+Group 9 completed all requirements according to the rubric for the final project. We downloaded raw data. Explored the data using MS-Excel. Cleaned the data. 
+Created a dashboard in Tableau to further explore the data. Created a database to save the cleaned data. Created a machine learning model. Ran the clean data through
+the model to test the water quality prediction accuracy. Created a forecasting model. Ran the clean data through the model to forecast the water quality index for
+the next 12 months. Finally, created a website to allow users to select from 3 different lakes and view the water quality index for the next 12 months.
+
+Recommendations for improvements:
+- Add date selector element to webpage
+- Make webpage tables and graphs interactive
+- Improve the forecasting model for lower MSE values.
+- Apply same methods to other bodies of water
+
