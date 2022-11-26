@@ -399,7 +399,7 @@ This is the visual that show each parameter over period of time. As we can see, 
 
 This is the visual heatmap between the average number of each parameter over period of time. The darker the color, the higher the number. The main point is to compare the mean of parameters with the mean of water quality index from 1994 to 2008.
 
-![Heatmap]([https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png))
+<img width="1196" alt="Heatmap" src="https://user-images.githubusercontent.com/106849689/204072376-90bcf68f-7c3a-4c77-b40d-da7c4370ac6b.png">
 
 Frequency of distinct time each number of parameters appear during those months from 1994 to 2008.
 
