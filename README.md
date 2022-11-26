@@ -385,3 +385,46 @@ The objective, therefore, is to identify the values of p, d and q. With the code
 
 •	The model run was successful with better performance than the Skforecast model. However, I find this model to be more complex to my understanding. And the after getting the predicted results it requires us to do the inverse the transformation which we did to the dataset to make it stationary. However, I would like to keep exploring more about it to get deeper understanding of ARIMA model and apply it in different time series forecasting.
 
+
+## Dashboard
+
+Goal for Segment 2: 
+    -	Visualization between lake parameters over time from 1994 to 2008
+    -	Frequency of parameter over time 
+    -	Depth visualization (optional) since depth was removed during data cleaning process. 
+
+This is the visual that show each parameter over period of time. As we can see, the peak was during 1996 and 2006. 
+
+![Parameter over time](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Parameters_Over_Time.png)
+
+This is the visual heatmap between the average number of each parameter over period of time. The darker the color, the higher the number. The main point is to compare the mean of parameters with the mean of water quality index from 1994 to 2008.
+
+![Heatmap]([https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Heatmap.png))
+
+Frequency of distinct time each number of parameters appear during those months from 1994 to 2008.
+
+![Frequency](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Code%20and%20Visual%20Snippets/Frequency%20of%20AmmoniaNitrogen.png)
+
+Problem from Segment 2:
+
+-	The heatmap doesn’t related nor adding any story to the main project. 
+-	Need to show a correlation as scatter plot. 
+
+Goal for Segment 3: 
+
+-	Have more scatter plot with linear regression line with all the parameters.
+- Google Slide for individual presentation. 
+
+![Correlation between Ammonia and WQI](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Corr%20Ammonia%20vs%20WQI.png)
+
+This graph shows the correlation between Ammonia Nitrogen and WQI. The R-Squared is 0.0038556 and P-value is 0.390971. As we can see, the correlation in this graph is low since the plot is very scattered away from the linear line. 
+
+
+ | Parameters Correlation | Parameters Correlation | Parameters Correlation |
+| :---:         |     :---:      |    :---:   |
+| ![Corr1](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(1).png)   | ![Corr2](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(2).png)     | ![Corr3](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Correlation(3).png)    |
+
+
+In these correlations between all parameter with WQI, we can see Dissolved Oxygen, Fecal Coliform, Nitrate Nitrite and Total Nitrogen has a stronger correlation with WQI accodring to the graph since the plot density is more comparing to other parameters such as Ammonia, Conductivity, Orthphosphate Phosphate, PH, Temperature and Total Phosphorus. 
+
+This is where you can find the [Tableau link](https://public.tableau.com/app/profile/ling7171/viz/CorrelationatLakeSammamish/WQI) for further details. 
