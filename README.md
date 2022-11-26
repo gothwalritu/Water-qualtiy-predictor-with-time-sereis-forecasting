@@ -413,7 +413,6 @@ Problem from Segment 2:
 Goal for Segment 3: 
 
 -	Have more scatter plot with linear regression line with all the parameters.
-- Google Slide for individual presentation. 
 
 ![Correlation between Ammonia and WQI](https://github.com/gothwalritu/Final_Project_UCB_Bootcamp/blob/Ling_Hoang/Segment_3/Corr%20Ammonia%20vs%20WQI.png)
 
@@ -437,8 +436,6 @@ This is where you can find the [Tableau link](https://public.tableau.com/app/pro
     - contains a drop-down list of the lakes we are using to calculate the water quality index.
     - displays a map of the lake selected from the drop-down list.
     
-
-
 - We updated the website by:
     - adding more formatting to the text and background.
     - replacing the map images with interactive maps.
