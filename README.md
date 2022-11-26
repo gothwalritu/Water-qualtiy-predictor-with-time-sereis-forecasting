@@ -15,16 +15,6 @@ weather and water quality.
 We used Quick DBD to create a ERD of our data
 ![QuickDBD-export](https://user-images.githubusercontent.com/106849689/200139417-deccad9a-fb82-4ff2-92a1-862dc4d4b325.png)
 
-## Source citation for raw data
-
-https://green2.kingcounty.gov/lakes/Query.aspx
-
-## ML models under consideration
-
-The team is experimenting with linear regression, logistic regression, and neural network modeling. We believe these would be good because the data 
-we are working with can be either continuous or categorical.
-
-
 
 ## Using Machine Learning Models for Predicting Water quality Index of Lakes in Washington state
 
