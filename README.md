@@ -11,13 +11,26 @@ recreational and potability use. It is an interactive website which takes user s
 quality forecast for that lake. The location will be displayed using marker layer map and pop-up markers, a detailed water quality prediction
 table as well as a water quality prediction graph.
 
-## ERD
 
-We used Quick DBD to create a ERD of our data
+## Database Roadmap
+
+- Create QuickDBD 
+
 ![QuickDBD-export](https://user-images.githubusercontent.com/106849689/200139417-deccad9a-fb82-4ff2-92a1-862dc4d4b325.png)
 
+- Use Big Lake Sammamish data to create Database for Lake Sammamish
 
-## Using Machine Learning Models for Predicting Water quality Index of Lakes in Washington state
+- Use SQLite for Database 
+
+- Make a connection to the SQL Database
+
+- Create two tables for Database 
+
+- Create an Engine to Database 
+
+- Inspect Table / Commit to Database 
+
+## Machine Learning Models for Predicting Water quality Index of Lakes in Washington state
 
 ## Water Quality Index:
 
