@@ -20,6 +20,8 @@ table as well as a water quality prediction graph.
 
 - Use Big Lake Sammamish data to create Database for Lake Sammamish
 
+![Tables_in_db](https://user-images.githubusercontent.com/106849689/204070754-67ab3d42-1636-4fb2-bd6b-0a43a0978aa9.png)
+
 - Use SQLite for Database 
 
 - Make a connection to the SQL Database
