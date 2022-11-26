@@ -6,10 +6,10 @@
 We all love recreation activities in and around water. We always wonder where we should go, and which locations have the safest water for
 recreational activities, as well as which locations have potable water.
 
-In this project we will develop a tool which will show locations around Lake Sammamish in Washington State, and display which are safe for
-recreational and potability use. It will be an interactive tool which takes user input for geolocation and recommends the locations which 
-are fit for potability and recreational uses. The location will be displayed using marker layer map and pop-up markers, information about 
-weather and water quality.
+In this project we will develop a tool which will show lakes around King County, Washington State, and display which are safe for
+recreational and potability use. It is an interactive website which takes user selection of a specific lake and presents the water 
+quality forecast for that lake. The location will be displayed using marker layer map and pop-up markers, a detailed water quality prediction
+table as well as a water quality prediction graph.
 
 ## ERD
 
