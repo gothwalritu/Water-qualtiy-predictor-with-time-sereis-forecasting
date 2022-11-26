@@ -26,6 +26,8 @@ table as well as a water quality prediction graph.
 
 - Make a connection to the SQL Database
 
+<img width="1269" alt="save_to_db" src="https://user-images.githubusercontent.com/106849689/204071145-a11c75bd-0dcd-4a1a-8cd0-a9e32a0a060a.png">
+
 - Create two tables for Database 
 
 - Create an Engine to Database 
