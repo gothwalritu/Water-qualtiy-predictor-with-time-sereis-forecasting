@@ -36,6 +36,8 @@ table as well as a water quality prediction graph.
 
 - Inspect Table / Commit to Database 
 
+<img width="1269" alt="commit_db" src="https://user-images.githubusercontent.com/106849689/204071694-c926fce0-c0ef-4633-93b2-01e594fba05a.png">
+
 ## Machine Learning Models for Predicting Water quality Index of Lakes in Washington state
 
 ## Water Quality Index:
