@@ -13,7 +13,7 @@ To predict the water quality of a specific body of water for recreational use an
 
 - Make a connection to the SQL Database
 
-- Create two tables for Database 
+- Create tables for Database 
 
 - Create an Engine to Database 
 
